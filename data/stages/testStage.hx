@@ -24,12 +24,14 @@ function create()
     bfPlaceHolder.frames = Paths.getSparrowAtlas('characters/bfJustIdle');
     bfPlaceHolder.animation.addByPrefix('idle', 'BF idle dance', 24, false);
     bfPlaceHolder.animation.play("idle");
+    bfPlaceHolder.alpha = 0.5;
     insert(3, bfPlaceHolder);
 
     dadPlaceHolder = new FlxSprite(100 - 300, 100);
     dadPlaceHolder.frames = Paths.getSparrowAtlas('characters/dadJustIdle');
     dadPlaceHolder.animation.addByPrefix('idle', 'Dad idle dance', 24, false);
     dadPlaceHolder.animation.play("idle");
+    dadPlaceHolder.alpha = 0.5;
     dadPlaceHolder.flipX = false;
     insert(4, dadPlaceHolder);
 
@@ -37,6 +39,7 @@ function create()
     gfPlaceHolder.frames = Paths.getSparrowAtlas('characters/gfJustIdle');
     gfPlaceHolder.animation.addByPrefix('idle', 'GF Dancing Beat0', 24, false);
     gfPlaceHolder.animation.play("idle");
+    gfPlaceHolder.alpha = 0.5;
     gfPlaceHolder.flipX = false;
     insert(5, gfPlaceHolder);
 
