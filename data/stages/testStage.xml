@@ -1,3 +1,20 @@
 <!DOCTYPE codename-engine-stage>
-<stage startCamPosY="400" startCamPosX="400">
+<stage zoom="0.5" startCamPosY="400" startCamPosX="400">
+	<use-extension script="characterPositions"/>
+    <sprite name="platform" x="0" y="870" sprite="bgs/platform" scroll="1" scale="1.5" zoomfactor="1"/>
+    
+    <sprite name="bfPlaceHolder" x="1075" y="450" sprite="characters/bfJustIdle" scroll="1" zoomfactor="1" type="onbeat" alpha="0.5" beatInterval="2">
+        <anim name="idle" anim="BF idle dance" loop="false" fps="24"/>
+    </sprite>
+    <sprite name="dadPlaceHolder" x="-200" y="100" sprite="characters/dadJustIdle" scroll="1" zoomfactor="1" type="onbeat" alpha="0.5" beatInterval="2">
+        <anim name="idle" anim="Dad idle dance" loop="false" fps="24"/>
+    </sprite>
+    <sprite name="gfPlaceHolder" x="355" y="176" sprite="characters/gfJustIdle" scroll="1" zoomfactor="1" type="onbeat" alpha="0.5" beatInterval="1">
+        <anim name="danceLeft" anim="GF Dancing Beat" loop="false" indices="0..14" fps="24"/>
+        <anim name="danceRight" anim="GF Dancing Beat" loop="false" indices="15..30" fps="24"/>
+    </sprite>
+
+    <gf/>
+    <boyfriend/>
+    <dad/>
 </stage>
